@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice roll</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div class="container">
+        <button id="newgame" onclick="newgames()">New Game</button> 
+        <button id="reset" onclick="resets()">Restart Game</button>
+        <div id="rightwinnergif">
+            <img src="https://media0.giphy.com/media/26xBsTS9WJ7THk4mI/200w.webp?cid=ecf05e47pxhusgltq22rj1spfrtos0dopqmzjn1rvgg25fwa&rid=200w.webp&ct=g" alt="">
+        </div>
+        <div id="form-container">
+            <h1>Dice roll game</h1>
+            <input id="firstname" style="margin-top: 70px;" type="text" name="firstname" placeholder="Enter player one name"> <br>
+            <input id="secondname" type="text" name="secondname" placeholder="Enter player two name"> <br>
+            <input id="totalscore" type="number" placeholder="Enter total score" min="10" max="100"> <br>
+            <button style="font-size: 20px; color:#000;" type="button" onclick="submit()">Get Started</button>
+        </div>
+        <div id="leftwinnergif">
+            <img src="https://media0.giphy.com/media/1dMNqVx9Kb12EBjFrc/200.webp?cid=ecf05e47lh7ylr1f59mbxcou01l4swke6jhhhh7y0jqd6p83&rid=200.webp&ct=g" alt="">
+        </div>
+        <div id="borad-container">
+            <div id="one" class="names"></div>
+            <div id="two" class="names"></div>
+
+            <div id="scoreone" class="scores"></div>
+            <div id="scoretwo" class="scores"></div>
+
+            <div id="imgone" class="imgs">
+                <img src="1.png" alt="">
+            </div>
+            <div id="imgtwo" class="imgs">
+                <img src="1.png" alt="">
+            </div>
+
+            <button id="btns" style="font-size: 20px; color:#000;" onclick="rollone()" type="button" class="btn">Roll</button>
+            <button id="btnsl" style="font-size: 20px; color:#000;" onclick="rolltwo()" type="button" class="btn">Roll</button>
+        </div>
+    </div>
+</body>
+
+<script src="index.js">
+
+</script>
+</html>
+
+
+
+
+<!----
+/*<div id="imgone" class="imgs">
+    <img src="/Images/1.png" alt="">
+</div>
+<div id="imgtwo" class="imgs">
+    <img src="/Images/1.png" alt="">
+</div> ---->
